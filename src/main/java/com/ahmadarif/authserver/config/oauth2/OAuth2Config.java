@@ -39,8 +39,8 @@ public class OAuth2Config {
             security
                     .tokenKeyAccess("permitAll()")
 //                    .checkTokenAccess("hasRole('CLIENT')"); // ini bapuk, gak bisa request lagi
-                    .checkTokenAccess("hasAuthority('CLIENT')"); // ini bisa
-//                    .checkTokenAccess("isAuthenticated()"); // ini rekomendasi
+//                    .checkTokenAccess("hasAuthority('CLIENT')"); // ini bisa
+                    .checkTokenAccess("isAuthenticated()"); // ini rekomendasi
         }
 
         @Override
