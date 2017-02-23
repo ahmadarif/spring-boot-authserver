@@ -1,4 +1,4 @@
-# Menajalankan Projek
+# Menjalankan Projek
 - Lakukan konfigurasi database di `application.properties` dan `pom.xml`
 - Jalankan perintah `mvn install`
 - Jalankan perintah `mvn flyway:migrate`
