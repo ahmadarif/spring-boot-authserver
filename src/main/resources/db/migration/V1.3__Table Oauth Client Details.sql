@@ -10,7 +10,7 @@ CREATE TABLE oauth_client_details (
   access_token_validity INTEGER,
   refresh_token_validity INTEGER,
   additional_information VARCHAR(4096),
-  autoapprove BOOLEAN
+  autoapprove VARCHAR(256)
 );
 
 
@@ -28,4 +28,4 @@ INSERT INTO oauth_client_details
 
 INSERT INTO oauth_client_details
 (client_id, client_secret, resource_ids, scope, authorized_grant_types, authorities, web_server_redirect_uri, autoapprove) VALUES
-('clientimplicit', '123', 'belajar', 'read,write', 'implicit', 'CLIENT', 'http://localhost:30000/implicit', true);
+('clientimplicit', '123', 'belajar', 'read,write', 'implicit', 'CLIENT', 'http://localhost:30000/implicit', 'true');
