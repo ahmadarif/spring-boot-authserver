@@ -38,9 +38,9 @@ public class OAuth2Config {
         public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
             security
                     .tokenKeyAccess("permitAll()")
-                    .checkTokenAccess("hasRole('CLIENT')"); // field authorities harus pakai prefix (defaultnya 'ROLE_')
+//                    .checkTokenAccess("hasRole('CLIENT')"); // field authorities harus pakai prefix (defaultnya 'ROLE_')
 //                    .checkTokenAccess("hasAuthority('CLIENT')"); // sesuai nama
-//                    .checkTokenAccess("isAuthenticated()");
+                    .checkTokenAccess("isAuthenticated()"); // rekomended
         }
 
         @Override
