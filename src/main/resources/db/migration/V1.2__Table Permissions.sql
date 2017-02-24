@@ -7,5 +7,5 @@ CREATE TABLE s_permissions (
 
 
 INSERT INTO s_permissions (id_user, user_role) VALUES (1, 'ROLE_ADMIN');
-INSERT INTO s_permissions (id_user, user_role) VALUES (1, 'ROLE_OPERATOR');
-INSERT INTO s_permissions (id_user, user_role) VALUES (2, 'ROLE_OPERATOR');
+INSERT INTO s_permissions (id_user, user_role) VALUES (1, 'ROLE_USER');
+INSERT INTO s_permissions (id_user, user_role) VALUES (2, 'ROLE_USER');
