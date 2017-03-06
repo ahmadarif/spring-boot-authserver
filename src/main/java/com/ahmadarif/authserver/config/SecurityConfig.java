@@ -23,7 +23,7 @@ import javax.sql.DataSource;
 /**
  * Created by ARIF on 23-Feb-17.
  */
-@EnableWebSecurity(debug = true)
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
