@@ -15,8 +15,8 @@
         
         Fitur Aplikasi
         <ul>
-            <li><a href="/api/user/me">Informasi User</a></li>
-            <li sec:authorize="hasAuthority('HARGA_EDIT')"><a href="/api/harga/">Informasi Harga</a></li>
+            <li><a th:href="@{/api/user/me}">Informasi User</a></li>
+            <li sec:authorize="hasAuthority('HARGA_EDIT')"><a th:href="@{/etpa/api/harga}">Informasi Harga</a></li>
         </ul>
         
         <form th:action="@{/logout}" method="post">
